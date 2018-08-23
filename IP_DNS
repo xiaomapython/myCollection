@@ -1,0 +1,9 @@
+如何将ip修改成域名，这样的话可以使程序变得更加健壮，别人不能直接看见你的ip地址。
+后来总结下分享给大家。首先找到hosts文件的位置，这个文件是系统dns默认查找的文件。
+windows 系统：C:\WINDOWS\system32\drivers\etc
+linux下hosts文件位置：/etc/hosts
+找到文件后 可以在任意空白行加入 自己的ip  域名  域名解释 就ok了 如下 是我加入的内容。
+# localhost name resolution is handled within DNS itself.
+#    127.0.0.1       localhost
+#    ::1             localhost
+10.0.3.125 www.huajie001.com
